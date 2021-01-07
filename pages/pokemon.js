@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../components/Layout";
-import Link from "next/Link";
+import NextLink from "next/link";
 
 export default function pokemon({ pokeman }) {
     console.log(pokeman);
@@ -23,9 +23,9 @@ export default function pokemon({ pokeman }) {
                 <p>{type.type.name}</p>
             ))}
             <p className='mt-10 text-center'>
-                <Link href='/'>
+                <NextLink href='/'>
                     <a className='text-2xl underline'>Home</a>
-                </Link>
+                </NextLink>
             </p>
         </Layout>
     );
