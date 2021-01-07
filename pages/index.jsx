@@ -1,4 +1,3 @@
-import Head from "next/Head";
 import Layout from "../components/Layout";
 import Link from 'next/Link'
 import "tailwindcss/tailwind.css";
