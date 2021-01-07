@@ -1,5 +1,5 @@
 import Layout from "../components/Layout";
-import NextLink from 'next/link'
+import Link from 'next/link'
 import "tailwindcss/tailwind.css";
 
 export default function Home({pokemon}) {
@@ -11,13 +11,13 @@ export default function Home({pokemon}) {
               {
                 pokemon.map((pokeman, index) => (
                   <li key={index}>
-                    <NextLink href={`/pokemon?id=${index + 1}`}>
+                    <Link href={`/pokemon?id=${index + 1}`}>
                       <a className='border p-4 border-gray my-2 capitalize flex items-center text-lg bg-gray-200 rounded-lg'>
                         <img className='w-20 h-20 mr-3' src={pokeman.image} alt={pokeman.name}/>
                         <span className='mr-2 font-bold'>{index + 1}.</span>
                         {pokeman.name}
                       </a>
-                    </NextLink>
+                    </Link>
                   </li>
                 ))
               }
